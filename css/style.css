@@ -1,0 +1,103 @@
+
+/*スマホ、タブレット表示*/
+
+/*メイン*/
+#wrapper{
+max-width:700px;
+margin: 0 auto;
+z-index:100;
+}
+img {
+ width:100%;
+ height:auto;
+}
+
+/*pc画像の非表示*/
+.pc1,.pc2,.pc3,.pc4,.pc5,.pc6{
+	display:none;
+}
+/*2枚目のスマホ画像の上の余白*/
+.smart2{
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.frontp {
+position:relative;
+z-index:100;
+}
+.frontp2{
+z-index:50;
+}
+/*追従ボタン*/
+a#order {
+display:block;
+position: fixed;
+line-height: 100px;
+bottom: 0;
+display:block;
+max-width:700px;
+width: 100%;
+text-align: center;
+height:100px;
+background-color:#07ba3d;
+text-align: center;
+font-size: 250%;
+color:#fff;
+box-shadow: 0 1px 8px rgb(0,0,1);
+}
+a#order:hover{
+	opacity:0.95;
+}
+
+/*一番下の余白*/
+.footer-bottom{
+	height:150px;
+}
+
+/*フッター*/
+#footer{
+	width: 100%;	
+	margin-top: 25px;
+}
+#footer ul{
+	text-align: center;
+	margin-bottom: 15px;
+}
+#footer ul li{
+	font-size: 14px;
+	color: #482311;
+	line-height: 26px;
+}
+#footer ul li a{
+	font-size: 14px;
+	color: #482311;
+	text-decoration: underline;
+}
+#footer address{
+	text-align: center;
+	font-size: 9px;
+	background-color: #dacfb8;
+	color: #482311;
+	height: 30px;
+	padding-top: 12px;
+}
+
+	/*パソコン*/
+	@media screen and (min-width:1280px) { 
+	 
+		/*パソコン画像の表示*/
+		.pc1,.pc2,.pc3,.pc4,.pc5,.pc6{
+			display:inline;
+		}
+
+		/*スマホ画像の非表示*/
+		.smart1,.smart2,.smart3,.smart4,.smart5,.smart6,.smart7,
+		.smart8,.smart9,.smart10,.smart11,.smart12{
+			display: none;
+		}
+		
+
+	  
+	}
+  
